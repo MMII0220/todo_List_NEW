@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header todos={todos} />
       <AddToDo todos={todos} setTodos={setTodos} />
       <TodoList todos={todos} setTodos={setTodos} />
     </>

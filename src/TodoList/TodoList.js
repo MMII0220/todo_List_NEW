@@ -40,7 +40,7 @@ function TodoList({ todos, setTodos }) {
         setTodos(newTodos);
     }
 
-    // console.log(todos); // Почему тут 2 раза выводится массив???
+    console.log(todos); // Почему тут 2 раза выводится массив???
 
     function editTodo(id, value) {
         setEdit(id);
@@ -59,7 +59,7 @@ function TodoList({ todos, setTodos }) {
                             <input value={value} onChange={(e) => setValue(e.target.value)} /><br />
                         </> :
                         <>
-                            <div>{todo.text}</div>
+                            <div className='todoNote__text'>{todo.text}</div>
                         </>
                     }
                     {

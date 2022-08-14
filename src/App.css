@@ -1,3 +1,8 @@
+/* 
+  font-family: 'DynaPuff', cursive;
+  font-family: 'Rubik Distressed', cursive;
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -5,6 +10,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'DynaPuff', cursive;
 }
 
 h1,
@@ -17,6 +23,36 @@ h6 {
   padding: 0;
 }
 
+input {
+  background: none;
+  border: none;
+
+  font-family: 'Rubik Distressed', cursive;
+}
+
+button:first-child {
+  margin-right: 0;
+}
+
+button {
+  margin-right: 1%;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  font-family: 'Rubik Distressed', cursive;
+
+  -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+button:hover {
+  color: rgb(255, 31, 203);
+}
 
 .wrapper {
   text-align: center;
@@ -29,12 +65,30 @@ h6 {
 }
 
 .todo__count {
-  margin-bottom: 3%;
 }
 
 
+@media only screen and (max-width: 600px) {
+  .toDo__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .todo__text {
+    width: 100% !important;
 
-
+    margin-bottom: 3%;
+  }
+  .btn--save {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .todoNote__text {
+    width: 94%;
+  }
+}
 
 
 

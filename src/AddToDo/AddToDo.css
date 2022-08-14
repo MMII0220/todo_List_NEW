@@ -1,7 +1,28 @@
+.toDo__inner input {
+  font-size: 16px;
 
+  background: none;
+  border: none;
 
+  padding: 10px;
+  border: 3px solid rgba(83, 6, 83, 0.627);
 
+  width: 300px;
+}
 
+.btn--save {
+    border: 2px solid rgba(128, 0, 128, 0.627);
+
+    background: linear-gradient(rgb(139, 11, 139), #9198e5);
+
+    padding: 14px 12px;
+    height: 45px;
+}
+
+.btn--save:hover {
+    background: linear-gradient(rgb(221, 193, 221), #474c83);
+    color: rgb(242, 240, 240);
+}
 
 
 

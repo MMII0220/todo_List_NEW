@@ -24,8 +24,10 @@ function AddToDo({ todos, setTodos }) {
     return (
             <>
                 <div className='wrapper'>
-                    <input className='todo__text' value={value} placeholder='Введите значение...' onChange={ (e) => setValue(e.target.value) }/>
-                    <button className='btn--save' onClick={saveTodo}>Сохранить</button>
+                    <article className='toDo__inner'>
+                        <input className='todo__text' value={value} placeholder='Введите значение...' onChange={ (e) => setValue(e.target.value) }/>
+                        <button className='btn--save' onClick={saveTodo}>Сохранить</button>
+                    </article>
                 </div>
             </>
     );

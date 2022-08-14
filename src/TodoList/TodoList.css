@@ -1,33 +1,28 @@
-.wrapper {
-    text-align: center;
+
+.todoNote__text {
+    width: 404px;
+    margin: 0 auto;
+    padding: 10px;
+
+    margin-top: 2%;
+
+    background: linear-gradient(rgb(139, 11, 139), #9198e5);
+    text-align: left;
+
+    animation: show-loader .3s;
+
+    font-size: calc(10px + 1vw);
 }
-
-.todo__note {
-    animation: show-loader .2s;
-}
-
-
-
-
-
-
 
 @keyframes show-loader {
-    to {
-        transform: translateY(15px);
+    0% {
+        transform: translateY(-60px);
     }
-    from {
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
         transform: translateY(0px);
     }
 }
-
-@keyframes hide-loader {
-    to {
-        transform: translateY(-15px);
-    }
-    from {
-        transform: translateY(0px);
-    }
-}
-
 

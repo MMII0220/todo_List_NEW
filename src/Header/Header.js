@@ -1,18 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './Header.css';
 
 function noteCount(n) {
     return (
         <>
-            <div className='container'>Список Задач {n}</div>
+            <div className='notes__count'>
+                Список Задач: {n}
+            </div>
         </>
     );
 }
 
-function Header() {
+function Header({ todos }) {
     return (
         <>
-            <div className='container'>
-                noteCount();
+            <div className='wrapper'>
+                <header className='header'>
+                    <div className='container'>
+                        {noteCount(todos.length)}
+                    </div>
+                </header>
             </div>
         </>
     );
