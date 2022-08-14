@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+function noteCount(n) {
+    return (
+        <>
+            <div className='container'>Список Задач {n}</div>
+        </>
+    );
+}
 
 function Header() {
     return (
         <>
-            <div>Header</div>
+            <div className='container'>
+                noteCount();
+            </div>
         </>
     );
 }
