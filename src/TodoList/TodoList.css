@@ -1,0 +1,33 @@
+.wrapper {
+    text-align: center;
+}
+
+.todo__note {
+    animation: show-loader .3s;
+}
+
+
+
+
+
+
+
+@keyframes show-loader {
+    to {
+        transform: translateY(15px);
+    }
+    from {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes hide-loader {
+    to {
+        transform: translateY(-15px);
+    }
+    from {
+        transform: translateY(0px);
+    }
+}
+
+
