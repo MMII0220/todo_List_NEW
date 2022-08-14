@@ -11,8 +11,24 @@
 
     animation: show-loader .3s;
 
-    font-size: calc(10px + 1vw);
+    font-size: calc(8px + 1vw);
 }
+
+.edit__text {
+    width: 404px;
+    margin: 0 auto;
+    padding: 10px;
+
+    margin-top: 2%;
+
+    background: linear-gradient(rgb(217 128 217), #b8bbdb);
+    text-align: left;
+
+    animation: show-loader .3s;
+
+    font-size: calc(8px + 1vw);
+}
+
 
 @keyframes show-loader {
     0% {

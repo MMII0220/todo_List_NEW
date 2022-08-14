@@ -7,28 +7,7 @@ import './App.css';
 
 function App() {
 
-  const [todos, setTodos] = useState([
-    {
-      id: 0,
-      text: "Hello World",
-      state: false
-    },
-    {
-      id: 1,
-      text: "Let`s study",
-      state: false
-    },
-    {
-      id: 2,
-      text: 'Russia us the best',
-      state: true
-    },
-    {
-      id: 3,
-      text: 'Roziev help me!!!',
-      state: false
-    }
-  ]);
+  const [todos, setTodos] = useState([]);
 
   return (
     <>

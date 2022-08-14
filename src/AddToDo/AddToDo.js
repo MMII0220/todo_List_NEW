@@ -7,7 +7,6 @@ function AddToDo({ todos, setTodos }) {
     const [value, setValue] = useState('');
 
     function saveTodo() {
-        //Розиев Тут посмотори, как сделать по другому!!
         if (value.trim()) {
             setTodos([...todos, {
                 id: new Date().getTime(),
@@ -34,4 +33,3 @@ function AddToDo({ todos, setTodos }) {
 }
 
 export default AddToDo;
-

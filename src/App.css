@@ -67,7 +67,6 @@ button:hover {
 .todo__count {
 }
 
-
 @media only screen and (max-width: 600px) {
   .toDo__inner {
     display: flex;
@@ -88,15 +87,10 @@ button:hover {
   .todoNote__text {
     width: 94%;
   }
+  .edit__text {
+    width: 94%;
+  }
+  .btn--close {
+    margin-bottom: 6%;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -40,8 +40,6 @@ function TodoList({ todos, setTodos }) {
         setTodos(newTodos);
     }
 
-    console.log(todos); // Почему тут 2 раза выводится массив???
-
     function editTodo(id, value) {
         setEdit(id);
         setValue(value);
@@ -56,7 +54,7 @@ function TodoList({ todos, setTodos }) {
                     {
                         edit === todo.id ?
                         <>
-                            <input value={value} onChange={(e) => setValue(e.target.value)} /><br />
+                            <input className='edit__text' value={value} onChange={(e) => setValue(e.target.value)} /><br />
                         </> :
                         <>
                             <div className='todoNote__text'>{todo.text}</div>
@@ -81,4 +79,3 @@ function TodoList({ todos, setTodos }) {
 }
 
 export default TodoList;
-
