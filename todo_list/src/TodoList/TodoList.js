@@ -3,7 +3,6 @@ import './TodoList.css';
 
 
 function TodoList({ todos, setTodos }) {
-
     const [value, setValue] = useState('');
     const [edit, setEdit] = useState(null);
 
